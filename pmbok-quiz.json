@@ -1,0 +1,203 @@
+quizQuestions  = [
+        {
+            type: "text",
+            text: " What is a stakeholder?",
+            possibilities: [
+                {
+                    answer: "The person responsible for preparing the project budget."
+                },
+                {
+                    answer: " An organization that’s hired to perform risk analysis."
+                },
+                {
+                    answer: " A person or organization that is not actively involved in the project, or whose interests will not be affected by execution or completion of the project."
+                },
+                {
+                    answer: "A person or organization that is actively involved in the project, or whose interests may be positively or negatively affected by execution or completion of the project."
+                }
+            ],
+            selected: null,
+            correct: null
+        },
+        {
+            type: "text",
+            text: " A project charter:",
+            possibilities: [
+                {
+
+                    answer: "ists the names and roles of all project team members."
+                },
+                {
+                    answer: "is most often reviewed when documenting lessons learned."
+                },
+                {
+                    answer: "formally authorizes the existence of a project."
+                },
+                {
+                    answer: "is used to document change requests."
+                }
+            ],
+            selected: null,
+            correct: null
+        },
+        {
+            type: "text",
+            text: "Which subsidiary plan is not a part of the project management plan?",
+            possibilities: [
+                {
+                    answer: "human resource management plan"
+                },
+                {
+                    answer: "communications management plan"
+                },
+                {
+                    answer: "risk management plan"
+                },
+                {
+                    answer: "baseline management plan"
+                }
+            ],
+            selected: null,
+            correct: null
+        },
+        {
+            type: "text",
+            text: "When does a project reach its end?",
+            possibilities: [
+                {
+                    answer: "When the project objectives have been achieved."
+                },
+                {
+                    answer: " When the project is terminated because its objectives will not or cannot be met."
+                },
+                {
+                    answer: "When the need for the project no longer exists."
+                },
+                {
+                    answer: "For any of the reasons above."
+                }
+            ],
+            selected: null,
+            correct: null
+        },
+        {
+            type: "text",
+            text: "Which of the following is not a project constraint?",
+            possibilities: [
+                {
+                    answer: "Schedule"
+                },
+                {
+                    answer: "Stakeholder"
+                },
+                {
+                    answer: "Budget"
+                },
+                {
+                    answer: "Quality"
+                }
+            ],
+            selected: null,
+            correct: null
+        },
+        {
+            type: "text",
+            text: "Organizational project management is a strategy execution framework that utilizes which of the following?",
+            possibilities: [
+                {
+                    answer: "project management"
+                },
+                {
+                    answer: "program management"
+                },
+                {
+                    answer: "portfolio management"
+                },
+                {
+                    answer: "all of the above"
+                }
+            ],
+            selected: null,
+            correct: null
+        },
+        {
+            type: "text",
+            text: "Which answer best describes the PMBOK® Guide?",
+            possibilities: [
+                {
+                    answer: "It contains the standard for managing most projects most of the time across many types of industries."
+                },
+                {
+                    answer: " It contains step-by-step instructions for managing all projects."
+                },
+                {
+                    answer: "It contains the standard for how project managers must conduct themselves."
+                },
+                {
+                    answer: "It ensures project success."
+                }
+            ],
+            selected: null,
+            correct: null
+        },
+        {
+            type: "text",
+            text: "In the classic functional organization, the project manager’s authority is",
+            possibilities: [
+                {
+                    answer: "high."
+                },
+                {
+                    answer: " little or none."
+                },
+                {
+                    answer: "moderate to high."
+                },
+                {
+                    answer: "moderate"
+                }
+            ],
+            selected: null,
+            correct: null
+        },
+        {
+            type: "text",
+            text: " Which of the following best describe organizational process assets?",
+            possibilities: [
+                {
+                    answer: "buildings and equipment owned by the performing organization"
+                },
+                {
+                    answer: "reasons that most projects encounter risk"
+                },
+                {
+                    answer: " items that must be estimated before the schedule is developed"
+                },
+                {
+                    answer: "plans, processes, policies, procedures, and knowledge bases specific to and used by the performing organization"
+                }
+            ],
+            selected: null,
+            correct: null
+        },
+        {
+            type: "text",
+            text: "Project management offices (PMO) often serve which function?",
+            possibilities: [
+                {
+                    answer: " They provide human resource support functions."
+                },
+                {
+                    answer: "They provide project management certification exams."
+                },
+                {
+                    answer: "They provide accounting and budgetary support functions."
+                },
+                {
+                    answer: "They provide project management support functions."
+                }
+            ],
+            selected: null,
+            correct: null
+        }
+];
