@@ -1,7 +1,7 @@
 (function(){
 
     angular
-        .module("pokemonFacts")
+        .module("PMBOK")
         .factory("quizMetrics", QuizMetrics);
 
         QuizMetrics.$inject = ['DataService'];

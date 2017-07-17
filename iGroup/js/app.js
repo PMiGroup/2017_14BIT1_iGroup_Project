@@ -1,4 +1,4 @@
 (function() {
   angular
-      .module ("pokemonFacts", []);
+      .module ("PMBOK", []);
 })();

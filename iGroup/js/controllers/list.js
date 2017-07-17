@@ -1,6 +1,6 @@
 (function(){
     angular
-        .module("pokemonFacts")
+        .module("PMBOK")
         .controller("listControl", ListController);
       
     ListController.$inject = ['quizMetrics', 'DataService'];
@@ -9,14 +9,14 @@
         var vm = this;
         
         vm.quizMetrics = quizMetrics; 
-        vm.data = DataService.pokemonData; 
-        vm.activePokemon = {}; 
-        vm.changeActivePokemon = changeActivePokemon; 
+        vm.data = DataService.knowledgeareaData; 
+        vm.activeKnowledgeArea = {}; 
+        vm.changeActiveKnowledgeArea = changeActiveKnowledgeArea; 
         vm.activateQuiz = activateQuiz; 
         vm.search = ""; 
 
-        function changeActivePokemon(index){
-            vm.activePokemon = index;
+        function changeActiveKnowledgeArea(index){
+            vm.activeKnowledgeArea = index;
         }
 
         function activateQuiz(){

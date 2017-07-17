@@ -1,6 +1,6 @@
 (function(){
     angular
-        .module("pokemonFacts")
+        .module("PMBOK")
         .controller("resultsControl", ResultsController);
 
     ResultsController.$inject = ['quizMetrics', 'DataService'];

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="pokemonFacts">
+<html lang="en" ng-app="PMBOK">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -34,26 +34,28 @@
                 </button>
             </form>
             <div class="row">
-                <div class="col-sm-4" ng-repeat="pokemon in list.data | filter:list.search">
-                    <div class="well well-sm">
+                <div class="col-sm-4" ng-repeat="knowledgearea in list.data | filter:list.search">
+                    <div class="well well-sm knowledge-area-well">
                         <div class="row">
-                            <div class="col-md-6">
-                                <img ng-src="{{pokemon.image_url}}" 
-                                    class="img-rounded img-responsive well-image">
+                            <div class="col-md-12">
+                                <img ng-src="{{knowledgearea.image_url}}" 
+                                    class="img-rounded img-responsive well-image knowledge-area-img">
                             </div>
-                            <div class="col-md-6">
-                                <h4><strong>{{pokemon.name}}</strong></h4>
+                            <div class="col-md-12 knowledge-area-size">
+                                <h4><strong>{{knowledgearea.name}}</strong></h4>
 
-                                <p><strong>Category: </strong>{{pokemon.category}}</p>
-                                <p><strong>Height: </strong>{{pokemon.height}}</p>
-                                <p><strong>Weight: </strong>{{pokemon.weight}}</p>
-                                <p><strong>Type: </strong>{{pokemon.type}}</p>
-                                <p><strong>Weaknesses: </strong>{{pokemon.weaknesses}}</p>
+                                <p><strong>Initiating: </strong>{{knowledgearea.initiating}}</p>
+                                <p><strong>Planning: </strong>{{knowledgearea.planning}}</p>
+                                <p><strong>Executing: </strong>{{knowledgearea.executing}}</p>
+                                
+                            </div>
+                            <div class="col-md-12">
                                 <button class="btn btn-primary pull-right"
                                         data-toggle="modal"
                                         data-target="#pokemon-info"
-                                        ng-click="list.changeActivePokemon(pokemon)">Learn More</button>
+                                        ng-click="list.changeActiveKnowledgeArea(knowledgearea)">Learn More</button>
                             </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -63,25 +65,25 @@
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h2><strong>{{list.activePokemon.name}}</strong></h2>
+                            <h2><strong>{{list.activeKnowledgeArea.name}}</strong></h2>
                         </div>
                         <div class="modal-body">
                             <div class="row">
                                 <div class="col-xs-8 col-xs-offset-2">
-                                    <img ng-src="{{list.activePokemon.image_url}}" class="img-rounded img-responsive">
+                                    <img ng-src="{{list.activeKnowledgeArea.image_url}}" class="img-rounded img-responsive">
                                 </div>
                             </div>
                             <div class="row top-buffer">
-                                <div class="col-md-6">
-                                    <p><strong>Category: </strong>{{list.activePokemon.category}}</p>
-                                    <p><strong>Height: </strong>{{list.activePokemon.height}}</p>
-                                    <p><strong>Weight: </strong>{{list.activePokemon.weight}}</p>
-                                    <p><strong>Type: </strong>{{list.activePokemon.type}}</p>
-                                    <p><strong>Weaknesses: </strong>{{list.activePokemon.weaknesses}}</p>
+                                <div class="col-md-12">
+                                    <p><strong>Initiating: </strong>{{list.activeKnowledgeArea.initiating}}</p>
+                                    <p><strong>Planning: </strong>{{list.activeKnowledgeArea.planning}}</p>
+                                    <p><strong>Executing: </strong>{{list.activeKnowledgeArea.executing}}</p>
+                                    <p><strong>Monitoring and Controlling : </strong>{{list.activeKnowledgeArea.monitoring}}</p>
+                                    <p><strong>Closing: </strong>{{list.activeKnowledgeArea.closing}}</p>
                                 </div>
                                 <div class="col-xs-12 top-buffer">                                	
                                     <p><strong>Description: </strong></p>
-                                    <p>{{list.activePokemon.description}}</p>
+                                    <p>{{list.activeKnowledgeArea.description}}</p>
                                     <button class="btn btn-danger pull-right" 
                                         data-dismiss="modal">Close</button>
                                 </div>
